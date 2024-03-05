@@ -8,9 +8,9 @@ app.use(express.json());
 
 let db;
 
-MongoClient.connect('mongodb+srv://yogibo:yogibo@cluster0.vvkyawf.mongodb.net/?retryWrites=true&w=majority', function(err, client) {
+MongoClient.connect('mongodb+srv://admin:admin@cluster0.vvkyawf.mongodb.net/?retryWrites=true&w=majority', function(err, client) {
     if (err) return console.log(err);
-    db = client.db('todoapp');
+    db = client.db('board');
     console.log('MongoDB에 연결되었습니다.');
 });
 // 출석체크 요청 처리
