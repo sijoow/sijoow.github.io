@@ -8,7 +8,7 @@ app.use(express.json());
 
 let db;
 
-MongoClient.connect('mongodb+srv://admin:admin@cluster0.vvkyawf.mongodb.net/?retryWrites=true&w=majority', function(err, client) {
+MongoClient.connect('mongodb+srv://admin:admin@cluster0.unz3ui3.mongodb.net/forum?retryWrites=true&w=majority', function(err, client) {
     if (err) return console.log(err);
     db = client.db('board');
     console.log('MongoDB에 연결되었습니다.');
